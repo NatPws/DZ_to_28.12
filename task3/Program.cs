@@ -2,7 +2,7 @@
 
 Console.Write("Задайте произвольный массив из 4 чисел: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
+// поменять через GENERATE ARRAY
 int[] array = new int[4];
 int i = 0;
 
@@ -13,7 +13,7 @@ if (array[i] < array.Length)
      if (i == 0)
     {    array[i] = number % 10;
          number /= 10;
-    
+    // тут не совсем рекурсия, надо подумать, загуглить, исправить
     }
     Console.Write(array[i]);
    
